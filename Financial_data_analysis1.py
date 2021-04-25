@@ -5,25 +5,25 @@ import plotly.express as px
 
 @st.cache
 def load_data():
-    data=pd.read_csv(r"C:\Users\Aniket.Rele\Desktop\upwork\data\data\Output.csv")
+    data=pd.read_csv("Output.csv")
     return data
 def gold():
-    gold = pd.read_csv(r"C:\Users\Aniket.Rele\Desktop\upwork\data\data\gold.csv")
+    gold = pd.read_csv("gold.csv")
     return gold
 def bitcoin():
-    bitcoin = pd.read_csv(r"C:\Users\Aniket.Rele\Desktop\upwork\data\data\bitcoin.csv")
+    bitcoin = pd.read_csv("bitcoin.csv")
     return bitcoin
 def litcoin():
-    litcoin = pd.read_csv(r"C:\Users\Aniket.Rele\Desktop\upwork\data\data\litcoin.csv")
+    litcoin = pd.read_csv("litcoin.csv")
     return litcoin
 def eth():
-    eth = pd.read_csv(r"C:\Users\Aniket.Rele\Desktop\upwork\data\data\etherium.csv")
+    eth = pd.read_csv("etherium.csv")
     return eth
 def dollar():
-    dollar = pd.read_csv(r"C:\Users\Aniket.Rele\Desktop\upwork\data\data\dollar.csv")
+    dollar = pd.read_csv("dollar.csv")
     return dollar
 def sap500():
-    sap500 = pd.read_csv(r"C:\Users\Aniket.Rele\Desktop\upwork\data\data\S&P500.csv")
+    sap500 = pd.read_csv("S&P500.csv")
     return sap500
 
 st. set_page_config(layout="wide")
